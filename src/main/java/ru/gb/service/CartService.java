@@ -6,7 +6,9 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 import ru.gb.dao.CartDao;
 import ru.gb.entity.Cart;
+import ru.gb.entity.Product;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -43,4 +45,6 @@ public class CartService {
         return cartDao.save(cart);
 
     }
+
+
 }
